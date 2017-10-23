@@ -10,6 +10,11 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel = "stylesheet" type = "text/css" href = "../static/css/style.css" />
 
+  <!-- JQuery -->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ <!-- Scripts -->
+ <script src="../static/js/script.js" type="text/javascript"> </script>
+
 </head>
 <body>
 <center>
@@ -64,16 +69,16 @@ You cannot flip fewer than K pancakes at a time with the flipper, even at the en
 
 Your apprentice cook, who is still learning the job, just used the old-fashioned single-pancake flipper to flip some individual pancakes and then ran to the restroom with it, right before the time when customers come to visit the kitchen. You only have the oversized pancake flipper left, and you need to use it quickly to leave all the cooking pancakes happy side up, so that the customers leave feeling happy with their visit.
 
-Given the current state of the pancakes, calculate the minimum number of uses of the oversized pancake flipper needed to leave all pancakes happy side up, or state that there is no way to do it.</p>
+Given the current state of the pancakes, calculate the minimum number of uses of the oversized pancake flipper needed to leave all pancakes happy side up, or state that there is no way to do it.
 <br><br>
-<form>
-      <p>Enter a row:</p>
-     <input type="text">
-     <p>Enter k:</p>
-     <input type="text">
-    <button type="button"> Flip!</button>
-
-</form>
+Please give a row of pancakes. x for smiley pancake and o for a plain pancake. The k represents the size of the flipper. It should be an integer larger than 1 and smaller than number of pancakes
+</p>
+<br><br>
+    <form>
+        <p>Enter a row: <input type="text" id="row"></p>
+        <p>Enter k: <input type="text" id="k"></p>
+        <button type="submit" id="button"> Flip! </button>
+    </form>
 </div>
 </div>
 </div>
