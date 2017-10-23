@@ -1,112 +1,203 @@
-<!-- module3
-     delete.html
-     Created by Mauro J. Pappaterra on 22 of October 2017. -->
-
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel = "stylesheet" type = "text/css" href = "../static/css/style.css" />
 
-        <!-- Metadata-->
-        <title>Pancake Flipper</title>
-        <meta name="Description goes here" content="">
-        <meta name="Mauro José Pappaterra" content="tags go here">
+</head>
+<body>
+<center>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
 
-        <!-- Favicon -->
-        <link rel="shortcut icon" href="../static/img/favicon.png">
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+      </ul>
 
-    </head>
-    <body>
-        <!-- Your code starts here -->
-        <h1> Pancake Flipper </h1>
-        <h2> A Python WebApp created with Django</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniamLorem ipsum dolor sit amet, consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam</p>
+    </div>
+  </div>
+</nav>
 
-        <img src= "../static/img/pancakes.png" width="500px">
+<div class="jumbotron">
+  <div class="container text-center">
+    <h1>Team Portfolio</h1>
+    <p>We are Group L</p>
+  </div>
+</div>
+<h1> Pancake Flipper </h1>
+<h2> A Python WebApp created with Django</h2>
 
-        <h2>About Google Code Jam</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Excepteur sint occaecat cupidatat non proident,
-            sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+<img src= "https://i.imgur.com/19r6uG8.jpg" width="500px">
+
+<h2>About Google Code Jam</h2>
+<div class="jumbotron">
+  <div class="container text-center">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+    Excepteur sint occaecat cupidatat non proident,
+    sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+  </div>
+  </div>
+
+<img src="../static/img/pancakes.png" width="100"><img src="../static/img/pancakes.png" width="100"><img src="../static/img/pancakes.png" width="100">
+
+<h2>The Pancake Flipper</h2>
+<div>
+<div class="jumbotron">
+  <div class="container text-center">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+    Excepteur sint occaecat cupidatat non proident,
+    sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+<br><br>
+<form>
+      <p>Enter a row:</p>
+     <input type="text">
+     <p>Enter k:</p>
+     <input type="text">
+    <button type="button"> Flip!</button>
+
+</form>
+</div>
+</div>
+</div>
+
+<img src="../static/img/pancakes.png" width="100"><img src="../static/img/pancakes.png" width="100"><img src="../static/img/pancakes.png" width="100">
+<div class="container">
+  <h2>About Us</h2>
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#pesron">Mauro José Pappaterra</a></li>
+    <li><a data-toggle="tab" href="#pesron1">Alexandros Patsanis</a></li>
+    <li><a data-toggle="tab" href="#pesron2">Arnthor Helgi Sverrisson</a></li>
+    <li><a data-toggle="tab" href="#pesron3">Name 3</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="pesron" class="tab-pane fade in active">
+      <h3>Mauro José Pappaterra</h3>
+      <div class="jumbotron">
+      <div class="container text-center">
+      <img src="../static/img/mauro.jpg" class="img-circle" alt="Cinque Terre" width="200" height="250">
+      <p>I am a bachelor Software Engineering student at Linnaeus Universitet in Sweden.
+        I am currently living in San Francisco Bay Area, doing an exchange program at
+        California State University East Bay. My main interests include sofware development,
+        database systems, computer science, web development, entrepreneurship, and mobile
+         development. In my free time I like to swim, read all sorts of books, program and
+          travel around the world. I am currently looking for an internship or entry position
+           in the Bay Area!.
+           Before I embarked myself in this fascinating enterprise that Software engineering
+           is, I experienced life and travel all around the world. Here I am now, late but sure,
+            pursuing a new dream in California.</p>
+          <a target="_blank" href="https://www.linkedin.com/in/pappaterra/" class="fa fa-linkedin"></a>
+        </div>
+        </div>
+    </div>
+    <div id="pesron1" class="tab-pane fade">
+      <h3>Alexandros Patsanis</h3>
+
+      <div class="jumbotron">
+      <div class="container text-center">
+      <img src="../static/img/alex.jpg" class="img-circle" alt="Cinque Terre" width="150" height="250">
+      <p>An enthusiast in Software Engineering with an interest in programming methods.
+         I am passionate about helping the world through the power of programming in
+        conjunction with other fields like Education and the Sciences.I am a team
+        player and enjoy being part of a group that advocates for the purpose of
+        strengthening research. An analytical mind and desire to solve complex
+        problems is demonstrated by my skills in using proper software development
+        methodologies. Passionate to find solutions that can be used across various
+        situations. Strong interest in design patterns and computer language skills
+        and patterns, which allow developers to communicate.Through programming,
+        I can contribute to finding solutions to many problems in different fields.</p>
+        <a target="_blank" href="https://www.linkedin.com/in/alexander-patsanis-90a9a5a8/"  class="fa fa-linkedin" https://www.linkedin.com/in/alexander-patsanis-90a9a5a8/></a>
+        <a target="_blank" href="https://www.facebook.com/alexpatsanis" class="fa fa-facebook"></a>
+        <a target="_blank" href="https://twitter.com/AlexPatsanis" class="fa fa-twitter"></a>
+      </div>
+      </div>
+
+    </div>
+    <div id="pesron2" class="tab-pane fade">
+      <h3>Arnthor Helgi Sverrisson</h3>
+      <div class="jumbotron">
+      <div class="container text-center">
+        <img src="../static/img/arthur.jpg" class="img-circle" alt="Cinque Terre" width="250" height="250">
+      <p>Arnthor Helgi Sverrisson: I'm from Reykjavik Iceland. I did my bachelor
+        in Software Engineering in the University of Iceland. Currently I'm studying
+        masters in Computer Science in Uppsala University in Uppsala Sweden.
+        I'm taking Advanced Computer Science Studies in Sweden, Data Mining and
+         Artificial Intelligence. I'm interested in machine learning and working
+         with data. I intend to further my studies in this field here in Uppsala
+          University. I also like web and mobile app development. my interests
+          are travelling, watching and playing sports and programming.
+</p>
+
+          <a target="_blank" href="https://www.facebook.com/arntorhs" class="fa fa-facebook"></a>
+
+        </div>
+        </div>
+    </div>
+    <div id="pesron3" class="tab-pane fade">
+      <h3>Name 3</h3>
+
+      <div class="jumbotron">
+      <div class="container text-center">
+      <img src="../static/img/photo.jpg" width="200">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident,
+          sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+          <a target="_blank" href="#" class="fa fa-linkedin"></a>
+          <a target="_blank" href="#" class="fa fa-facebook"></a>
+          <a target="_blank" href="#" class="fa fa-twitter"></a>
+        </div>
+        </div>
+
+    </div>
+    <div id="menu3" class="tab-pane fade">
+      <h3>Menu 3</h3>
+      <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+    </div>
+  </div>
+</div>
 
 
-        <img src="../static/img/pancakes.png" width="100"><img src="../static/img/pancakes.png" width="100"><img src="../static/img/pancakes.png" width="100">
-
-        <h2>The Pancake Flipper</h2>
-
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Excepteur sint occaecat cupidatat non proident,
-            sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-
-        <form>
-            <p>Enter a row: <input type="text" id="row"></p>
-            <p>Enter k: <input type="text" id="k"></p>
-            <button type="submit" id="button"> Flip! </button>
-            <!-- <a href="/xxoxxoxxx3">TRY ME</a> -->
-        </form>
-
-        <img src="../static/img/pancakes.png" width="100"><img src="../static/img/pancakes.png" width="100"><img src="../static/img/pancakes.png" width="100">
-
-        <h2>About Us</h2>
-
-        <img src="../static/img/photo.jpg" width="200">
-        <p>Mauro José Pappaterra sit amet, consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Excepteur sint occaecat cupidatat non proident,
-            sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-
-        <img src="../static/img/photo.jpg" width="200">
-        <p>It amet, consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Excepteur sint occaecat cupidatat non proident,
-            sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-
-        <img src="../static/img/photo.jpg" width="200">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Excepteur sint occaecat cupidatat non proident,
-            sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-
-        <img src="../static/img/photo.jpg" width="200">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Excepteur sint occaecat cupidatat non proident,
-            sunt in culpa qui officia deserunt mollit anim id est laborum</p>
 
 
-        <img src="../static/img/pancakes.png" width="100"><img src="../static/img/pancakes.png" width="100"><img src="../static/img/pancakes.png" width="100">
-        <!-- Your code ends here -->
 
-        <!-- External Scripts -->
 
-        <!-- JQuery -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <!-- Scripts -->
-        <script src="../static/js/script.js" type="text/javascript"></script>
+<br><br><br><br>
 
-    </body>
+
+
+<img src="../static/img/pancakes.png" width="100"><img src="../static/img/pancakes.png" width="100"><img src="../static/img/pancakes.png" width="100">
+
+</div><br><br>
+
+<footer class="container-fluid text-center">
+  <p></p>
+</footer>
+</center>
+</body>
 </html>
