@@ -7,10 +7,13 @@ $( document ).ready(function() {
 
     $("#button").click( function(){
 
-        var row = $("#row").val();
+        var row = $("#row").val().toLowerCase();
         var pancakes = row.length
         var k = $("#k").val();
         var flag = true;
+
+        row = row.replace(/\+/g , "x");
+        row = row.replace(/-/g , "o");
 
         for (var i = 0; i < pancakes; i++) {
             if (!(row[i] == 'x' || row[i] == 'o')){
@@ -20,15 +23,14 @@ $( document ).ready(function() {
 
         if ($.isNumeric(k) && k > 1 && k <= row.length && flag){
 
-            var goto = $(location).attr('href')+ row + k;
+            var url = $(location).attr('href')+ row + k;
+            url = url.replace('?','/') // workaround for ? in address bar
 
-            var goto = goto.replace('?','/') // workaround for ? in address bar
-
-            window.open(goto)
+            window.open(url)
 
         } else {
-            alert("Invalid Input: Enter a row of pancakes x (for happy) and o (for flat)" +
-                " (e.g.: xooxoxoxox) and an integer larger than 1 but not larger than the total" +
+            alert("Invalid Input: Enter a row of pancakes + (for happy) and - (for flat)" +
+                " (e.g.: +--+++--+--+) and an integer larger than 1 but not larger than the total" +
                 " number of pancakes on the given row");
         }
         });

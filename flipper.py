@@ -2,14 +2,13 @@
 # flipper.py
 # Created by Mauro J. Pappaterra on 29 of September 2017.
 
-
-X = 'x'
-O = 'o'
+X = '+'
+O = '-'
 
 def pancakeFlipper(row, k):
     """Receives a row of pancakes as a string and a number of simultaneous flips k
-    returns a string with the number of flips to have all pancakes smiley
-    side up or a message if there is on solution and a string with a step by step solution
+    returns a tuple with a string with the number of flips to have all pancakes smiley
+    side up or a message if there is no solution, and a string with a step by step solution
     e.g. '---+-++-' 3 => 3
     e.g. '+++++' 4 => 0
     e.g. '-+-+-' 4 => IMPOSSIBLE"""
@@ -57,9 +56,9 @@ def pancakeFlipper(row, k):
         stepByStep = stepByStep.replace(']',' ')
         stepByStep = stepByStep.replace(',','')
         stepByStep = stepByStep.replace('\'','')
-        #stepByStep = stepByStep.replace('\n','<br>')
-        stepByStep = stepByStep.replace('x', '<img src= "../static/img/happy.png" alt="x" width="30px">')
-        stepByStep = stepByStep.replace('o', '<img src= "../static/img/plain.png" alt="o" width="30px">')
+
+        stepByStep = stepByStep.replace(X, '<img src= "../static/img/happy.png" alt="+" width="30px">')
+        stepByStep = stepByStep.replace(O, '<img src= "../static/img/plain.png" alt="-" width="30px">')
 
         return (str(flips), stepByStep)
     else:
@@ -67,12 +66,12 @@ def pancakeFlipper(row, k):
 
 
 def flip (char):
-    "Toggles + to - and - to +"
+    "Toggles X to O and O to X"
     if (char == O):
         return X
     elif (char == X):
         return O
 
 # FOR TESTING ONLY
-# print (pancakeFlipper(['x','x','o','x','x','o','x','x','x'],3)[0])
-# print (pancakeFlipper(['x','x','o','x','x','o','x','x','x'],3)[1])
+# print (pancakeFlipper(['+','+','-','+','+','-','+','+','+'],3)[0])
+# print (pancakeFlipper(['+','+','-','+','+','-','+','+','+'],3)[1])
