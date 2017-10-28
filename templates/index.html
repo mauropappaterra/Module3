@@ -141,6 +141,7 @@ Please give a row of pancakes. x for smiley pancake and o for a plain pancake. T
 </p>
 
           <a target="_blank" href="https://www.facebook.com/arntorhs" class="fa fa-facebook"></a>
+          <a target="_blank" href="https://www.linkedin.com/in/arnthor-helgi-sverrisson/" class="fa fa-linkedin"></a>
 
         </div>
         </div>
@@ -173,7 +174,76 @@ Please give a row of pancakes. x for smiley pancake and o for a plain pancake. T
 
 <br><br><br><br>
 
+<h2>About</h2>
+<div class="jumbotron">
+  <div class="container text-center">
+<p>In the context of module 3 we developed a web application implementing the pancake flipper algorithm from Google’s Code Jam competition. We achieved that by using Django framework. It was a new framework for every of us, so that was the main reason to choose it. Moreover, it comes with many benefits; It is fast, easy to learn, scalable, secure and have many extra plug-ins which facilitate multiple operations like authentication, object management etc. Also, not to forget that the programming language that uses is Python, which is very popular now.
+</p>
+<h3><b>HTTP Request Handling</b></h3>
+<p>Django uses a file named urls.py which maps all the urls in the websites. It works as the routing file. Django has also its own functions to handle GET and POST http actions.
+</p>
+<h3><b>urls.py</b></h3>
+<img src="../static/img/urls.png" />
+<p>
+  The server’s IP is  104.131.43.24 and the program runs in port 3000
+(http://104.131.43.24:3000/).  This happens because Django uses an internal server inside the actual server, so we need to specify a port to run the application. This is one of the disadvantages of Django since it was impossible for us to deploy. It is a complex and not trivial procedure. However, this can be  justified because Django also concerns real time large scale application.
+</p>
+<h3><b>Data storage</b></h3>
+<p>
+  Django uses an internal database in the form of ORM (Object Relation Mapping). This can facilitate data management and save us precious time but could also be a victim because everything is based on Django ORM. We didn’t try to install our own database though. Finally, we only used a tiny part of Django capabilities since our project was relatively simple. However, it is a powerful tool with many features to research and exploit. It gave us for sure the mood to get involved with future projects.
+</p>
+<h3><b>Server Set Up</b></h3>
+  <p>
+    Create a droplet in Digital Ocean. Ours runs Ubuntu vs 16.04.3 LTS
+  </p>
+  <p>
+    Download and install Python
+  </p>
+  <p>
+    Download and install Django
+  </p>
+  <p>
+    Create a new project
+  </p>
 
+<p></p>
+<a href="https://www.digitalocean.com/community/tutorials/how-to-set-up-django-with-postgres-nginx-and-gunicorn-on-ubuntu-16-04">Full instruction we used to set-up the server</a>
+<br />
+<img src="../static/img/startproject.png" />
+<p>
+  In order to run the server, we just need to navigate to the directory where the project is saved and then simply run:
+</p>
+<p>
+<i>python manage.py runserver</i>
+</p>
+<img src="../static/img/setup.png" width="600"/>
+<img src="../static/img/setup2.png" width="600" />
+<h3><b>SSH Configuraiton</b></h3>
+<p>
+  This is how we configured the SSH keys in Putty
+</p>
+<img src="../static/img/ssh1.png" />
+<img src="../static/img/ssh2.png" />
+
+<h3><b>Project components</b></h3>
+  <p>
+    <b>Settings_py:</b> Setting and configurations for the whole website
+  </p>
+  <p>
+    <b>_init_py:</b> An empty file that tells python that this is a python package
+  </p>
+  <p>
+    <b>Urls.py:</b> See above in Http Request Handling section
+  </p>
+  <p>
+    <b>Wsqi.py:</b> Webserver Gateway Interface
+  </p>
+<p>
+  A static folder is also included which contains all the CSS styling sheets, images and front-end JavaScript files. The back-end part is written in Python and implements the pancake flipper algorithm.
+</p>
+<a href="https://github.com/yogurt1989/Module3" class="fa fa-github"></a>
+  </div>
+  </div>
 
 <img src="../static/img/pancakes.png" width="100"><img src="../static/img/pancakes.png" width="100"><img src="../static/img/pancakes.png" width="100">
 
